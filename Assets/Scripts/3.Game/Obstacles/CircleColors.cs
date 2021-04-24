@@ -17,9 +17,9 @@ public class CircleColors : MonoBehaviour
             }
             intAlredyPickedColors.Add(colorNumber);
             //Paint Piece Color
-            Color childNewColor = GameStateManager.instance.colores[colorNumber];
+            Color childNewColor = GameController.instance.gameStateManager.colores[colorNumber];
             //Asign color to script
-            child.GetComponent<CirclePiecesLogic>().pieceColor = GameStateManager.instance.colores[colorNumber];
+            child.GetComponent<CirclePiecesLogic>().pieceColor = GameController.instance.gameStateManager.colores[colorNumber];
         }
     }
 
